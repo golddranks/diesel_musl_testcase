@@ -1,0 +1,5 @@
+target/debug
+migrations
+.git
+.gitignore
+.DS_Store
