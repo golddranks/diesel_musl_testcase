@@ -8,7 +8,6 @@ table! {
         phone -> Varchar,
         business_connection -> Varchar,
         memo -> Varchar,
-        joined -> Timestamptz,
     }
 }
 

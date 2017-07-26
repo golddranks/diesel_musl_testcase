@@ -6,6 +6,5 @@ CREATE TABLE members (
     mail VARCHAR NOT NULL,
     phone VARCHAR NOT NULL,
     business_connection VARCHAR NOT NULL,
-    memo VARCHAR NOT NULL,
-    joined TIMESTAMPTZ NOT NULL
+    memo VARCHAR NOT NULL
 );

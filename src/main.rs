@@ -2,19 +2,12 @@
 extern crate diesel;
 #[macro_use]
 extern crate diesel_codegen;
-#[macro_use]
-extern crate serde_derive;
-extern crate serde;
-extern crate chrono;
 
 use diesel::prelude::*;
 use diesel::pg::PgConnection;
 
 pub mod schema;
 pub mod models;
-
-use models::*;
-use schema::*;
 
 fn main() {
     let db_url = std::env::var("DB_URL").unwrap();

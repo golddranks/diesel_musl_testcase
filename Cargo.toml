@@ -1,11 +1,8 @@
 [package]
 name = "diesel_musl_testcase"
 version = "0.1.0"
-authors = ["Kontio Pyry <kontio@r.recruit.co.jp>"]
+authors = ["Kontio Pyry <pyry.kontio@drasa.eu>"]
 
 [dependencies]
-diesel = { version="0.15", features = ["postgres", "unstable", "chrono", "large-tables"] }
+diesel = { version="0.15", features = ["postgres"] }
 diesel_codegen = { version="0.15", features = ["postgres"], default-features = false }
-serde = "1"
-serde_derive = "1"
-chrono = { version="0.4", features = ["serde"]}

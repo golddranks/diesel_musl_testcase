@@ -1,9 +1,6 @@
 use super::schema::*;
-use chrono::{DateTime};
-use chrono::offset::Utc;
 
-#[derive(Queryable, Identifiable, Insertable, AsChangeset, PartialEq, Eq, Hash, Debug, Serialize,
-         Deserialize)]
+#[derive(Queryable, Identifiable, Insertable, AsChangeset, PartialEq, Eq, Hash, Debug)]
 #[table_name = "members"]
 pub struct Member {
     pub id: String,
@@ -14,5 +11,4 @@ pub struct Member {
     pub phone: String,
     pub business_connection: String,
     pub memo: String,
-    pub joined: DateTime<Utc>,
 }
