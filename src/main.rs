@@ -14,9 +14,6 @@ fn main() {
     run_migrations(&db_url);
 }
 
-embed_migrations!();
-
 pub fn run_migrations(database_url: &str) {
     let conn = PgConnection::establish(database_url).unwrap();
-    embedded_migrations::run(&conn).unwrap();
 }
